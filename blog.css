@@ -1,0 +1,263 @@
+:root {
+  --primary: rgb(0, 140, 255);
+  --secondary: rgb(0, 251, 255);
+  --shadow: -5px 10px 10px 5px rgba(27, 26, 26, 0.556);
+}
+body {
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.global {
+  background-color: var(--primary);
+}
+.global > div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header {
+  background-color: rgb(0, 251, 255);
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > ul {
+  display: flex;
+}
+header ul li {
+  margin-left: 1rem;
+}
+.logo {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  display: flex;
+}
+.logo > div > img {
+  border: dotted black;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header ul > li:hover {
+  cursor: pointer;
+  transition: ease;
+  color: red;
+  transform: scale(1.2);
+  transition: ;
+}
+.header ul > li:active {
+  opacity: 0.15;
+}
+.hero {
+  background: url(./Images/mt.Everest.jpg) center;
+  height: 60vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  width: 450px;
+  background: #00000077;
+  color: white;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+.hero-content hr {
+  width: 100%;
+}
+.main {
+  display: flex;
+  gap: 1rem;
+}
+.Latest-post {
+  background: url(./Images/darkbg.jpg) no-repeat center;
+  background-size: cover;
+  filter: grayscale(0.4);
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 64px;
+  text-align: center;
+}
+.first {
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, 0.595);
+  padding: 20px 16px;
+  margin-bottom: 24px;
+}
+.side-links {
+  width: 34%;
+}
+.articles {
+  width: 66%;
+}
+article .artic-img {
+  width: 450px;
+}
+article .btn {
+  float: right;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(135, 167, 235);
+  font-weight: 600;
+  box-shadow: 4px 3px 19px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+.btn:hover {
+  background-color: rgb(0, 60, 255);
+  color: white;
+}
+.btn:active {
+  opacity: 0.5;
+}
+article .article-img {
+  width: 450px;
+}
+.second {
+  box-shadow: var(--shadow);
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.595);
+  gap: 16px;
+  padding: 20px 16px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+article .third-img {
+  width: 450px;
+}
+.third {
+  display: flex;
+  gap: 16px;
+  padding: 20px 16px;
+  margin-bottom: 24px;
+  background-color: rgba(255, 255, 255, 0.595);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.fourth {
+  display: flex;
+  gap: 16px;
+  padding: 20px 16px;
+  background-color: rgba(255, 255, 255, 0.595);
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+article .fourth-img {
+  width: 450px;
+}
+.Latest-post h2 {
+  color: white;
+  margin: 0;
+  padding-top: 40px;
+}
+.aside1 {
+  background-color: rgba(255, 255, 255, 0.595);
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 65px;
+}
+.aside1 p {
+  font-weight: bold;
+}
+.aside2 {
+  background-color: rgba(255, 255, 255, 0.595);
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.aside2 p {
+  font-weight: bold;
+}
+.recom {
+  margin: 10px;
+}
+.card-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.card {
+  width: 260px;
+  box-shadow: var(--shadow);
+  padding-bottom: 15px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+.card img {
+  border-radius: 10px 10px 0px 0px;
+}
+.card .title {
+  font-weight: bold;
+}
+.bton {
+  display: flex;
+  justify-content: center;
+}
+.bton .button {
+  width: 100%;
+  padding: 5px 0px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  border: none;
+  background-color: aqua;
+}
+.subscription {
+  background-image: url(./Images/recom-4.jpg);
+  padding: 20px 16px;
+  background-size: cover;
+  background-position: center;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form [type="text"] {
+  padding: 15px;
+  border-radius: 10px;
+  color: gray;
+  border: none;
+}
+.form [type="email"] {
+  padding: 15px;
+  border-radius: 10px;
+  color: gray;
+  border: none;
+}
+.sub {
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: gray;
+  cursor: pointer;
+}
